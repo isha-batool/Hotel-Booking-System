@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+   
+</head>
+
+<body>
+    
+    <!--3 BACKGROUND IMAGES-->
+    <div class="image-container active">
+        <img src="images/banner1.jpg" alt="First Image" />
+    </div>
+
+    <div class="image-container">
+        <img src="images/banner2.jpg" alt="Second Image" />
+    </div>
+
+    <div class="image-container">
+        <img src="images/banner3.jpg" alt="Third Image" />
+    </div>
+    <!--BOOKING FORM-->
+     <div class="booking-form">
+        <form method="post" action="/Hotel/Booking">
+           <h3 id="topheading">BOOK A ROOM ONLINE</h3>
+           <br />
+           <div class="form-group">
+                <label for="check-in">Check-in</label>
+                <input type="date" class="form-control" id="check-in" required>
+               
+            </div>
+           
+            <div class="form-group">
+                <label for="check-out">Check-out</label>
+                <input type="date" class="form-control" id="check-in" required>
+               
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg" id="bookingbtn" href="@Url.Action("Booking", "Hotel")">Booking</button>
+
+       </form>
+   </div>
+   <!--BENEFITS -->
+   <br />
+
+   <div class="reasons-section" >
+            <h3 class="text-center">3 Reasons to Book Online</h3>
+
+            <div class="row" style="margin-left:20%; margin-top:3%;">
+                <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="grid-item">
+                            <img src="images/icon1.png" alt="Reason 1" class="img-fluid">
+                            <h4>Best Rates</h4>
+                            <p>We offer the best deals and the lowest rates.s</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="grid-item">
+                            <img src="images/icon2.png" alt="Reason 2" class="img-fluid">
+                            <h4>Easy Booking</h4>
+                            <p>We make online booking simple and easy.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="grid-item">
+                            <img src="images/icon3.png" alt="Reason 3" class="img-fluid">
+                            <h4>Safe & Secure</h4>
+                            <p>We ensure your personal information is kept safe and secure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br /><br />
+   <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="~/images/blog_bg.jpg" alt="Image" class="img-fluid">
+    </div>
+    <div class="col-md-6"  style="border-right:2px solid red ;">
+      <h2>Online Booking</h2>
+      <p class="fst-italic text-info" >Welcome to our online booking platform! With just a few clicks, you can easily secure your travel plans, accommodation, or event tickets. Whether you're planning a relaxing vacation, a business trip, or a thrilling adventure, our user-friendly interface ensures a seamless booking experience. Discover a wide range of options tailored to your preferences and budget. From luxurious hotels to cozy guesthouses, we offer a diverse selection of accommodations. </p>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var images = $(".image-container");
+            var currentIndex = 0;
+
+            function showNextImage() {
+                images.removeClass("active");
+                currentIndex = (currentIndex + 1) % images.length;
+                images.eq(currentIndex).addClass("active");
+            }
+
+            setInterval(showNextImage, 2000);
+        });
+    </script>
+
+               
+
+
+        
+ 
+  
+    
+</body>
+
+</html>
+

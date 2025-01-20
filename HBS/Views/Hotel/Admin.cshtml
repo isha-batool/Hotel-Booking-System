@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Management</title>
+    <style>
+        body {
+            background-image: url('/images/about.png');
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            width: 200px; /* Added fixed width */
+            font-size: 18px;
+            background-color: crimson;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+            .button:hover {
+                background-color: indianred;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="@Url.Action("DeleteBooking", "Hotel")" class="button">Delete Booking</a>
+    </div>
+</body>
+</html>

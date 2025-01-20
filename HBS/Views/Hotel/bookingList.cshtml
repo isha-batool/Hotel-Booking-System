@@ -1,0 +1,25 @@
+﻿@model List<Booking>
+
+<table>
+    <thead>
+        <tr>
+            <th>Full name</th>
+            <th>Email</th>
+            <th>Phone number</th>
+            <th>Check-In</th>
+            <th>Checl-out</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Hotel_Booking_System.Models.Booking b in Model)
+        {
+            <tr>
+                <td>@b.FullName</td>
+                <td>@b.Email</td>
+                <td>@b.PhoneNumber</td>
+                <td>@b.CheckIn</td>
+                <td>@b.CheckOut</td>
+            </tr>
+        }
+    </tbody>
+</table>

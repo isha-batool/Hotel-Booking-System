@@ -1,0 +1,13 @@
+﻿@model Booking
+
+
+<h1>WELCOME TO ONLINE HOTEL BOOKING </h1>
+<h3>YOU ENTERED THE FOLLOWING DETAILS</h3>
+
+<p>@Model.FullName</p>
+<p>@Model.Email</p>
+<p>@Model.PhoneNumber</p>
+<p>@Model.CheckIn</p>
+<p>@Model.CheckOut</p>
+
+Click<a asp-action="BookingList">here</a> to view all bookings.

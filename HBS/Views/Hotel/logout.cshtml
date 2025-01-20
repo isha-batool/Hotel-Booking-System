@@ -1,0 +1,28 @@
+﻿@page
+
+<link rel="stylesheet" href="~/css/logout.css" />
+<div >
+    <partial name="_MyPartialView">
+
+</div>
+<div class="container">
+
+
+    <div class="row p-1 logout" style="margin-left:30%;">
+        <div class="col-6 text-end">
+            <input type="button" id="sendButton" value="Logout" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/js/dist/browser/signalr.js"></script>
+<script src="~/js/logout.js"></script>

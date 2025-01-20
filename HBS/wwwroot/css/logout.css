@@ -1,0 +1,12 @@
+﻿.logout {
+    margin-top: -55%;
+/*    margin-left: 40%;
+*/}
+#sendButton
+{
+    border:black;
+    color:red;
+    width:70px;
+    height:40px;
+    border-radius:3px;
+}

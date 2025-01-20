@@ -1,0 +1,83 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+   
+</head>
+ <section class="background-radial-gradient overflow-hidden">
+  <style>
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+  
+    }
+     </style>
+  <body>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+            alt="Sample photo">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Login</h3>
+
+            <form class="px-md-2" method="post" action="/Hotel/login">
+
+             <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" class="form-control" placeholder="Email" name="email"/>
+                    </div>
+                  </div>
+
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" class="form-control" placeholder="Password" name="password"/>
+                    </div>
+                  </div>
+
+                
+
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+              <button type="submit" class="btn btn-primary btn-lg mb-1">Login</button>
+                  </div>
+
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-danger">
+        @ViewBag.Message
+    </div>
+}
+  </body>
+</section>

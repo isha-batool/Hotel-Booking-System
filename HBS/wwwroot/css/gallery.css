@@ -1,0 +1,104 @@
+﻿/*GALLERY CSS*/
+
+.image-container .text h1 
+{
+    margin-left: 50%;
+    margin-top: -7%;
+    color: white;
+}
+
+.gallry-container 
+{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+body
+{
+}
+.image-container 
+{
+    top: 0;
+    left: 0;
+    margin-top: 2%;
+    margin-left: -19%;
+   
+}
+.image-container img 
+{
+    object-fit: cover;
+    width: 204vh;
+    height: 190px;
+}
+.gallry-container 
+{
+    margin-top: 5%;
+    margin-left:5%;
+}
+.list-unstyled li
+{
+    color:white;
+
+}
+.sub-menu2
+{
+    font-size:18px;
+}
+.myfooter {
+/*    margin-left: 10%;
+*/    background-color: gray;
+    margin-top: 7%;
+    color: white;
+/*    width: 204.6vh;
+*/    height: 40%;
+    border-bottom: 6px solid black;
+}
+.newsletter-button {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top:3%;
+    cursor: pointer;
+}
+
+.footer-heading 
+{
+    margin-top: 5%;
+/*    text-decoration: underline red;
+*/    font-size: 30px;
+}
+.footer-links a 
+{
+    color: white;
+}
+.footer-links a:hover 
+{
+    color: red;
+    text-decoration:none;
+}
+.social-icons a 
+{
+    color: white;
+    margin-right: 5px;
+}
+
+
+#mynav 
+{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+#mynav li 
+{
+    padding: 22px;
+}
+#mynav li.nav-item:hover a.nav-link 
+{
+    color: red !important;
+}
+.logo 
+{
+    padding-top: 5px;
+    margin-left: 15%;
+}

@@ -1,0 +1,22 @@
+﻿body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.image-container 
+{
+   
+    margin-left: -19%;
+}
+.image-container img 
+{
+    object-fit: cover;
+    width: 242vh;
+    height: 700px;
+}
+.image-container.active 
+{
+        display: block;
+}
+    

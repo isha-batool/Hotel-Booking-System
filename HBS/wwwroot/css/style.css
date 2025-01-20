@@ -1,0 +1,101 @@
+﻿/*INDEX, HOME CSS*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    display: none;
+    top: 0;
+    left: 0;
+    margin-top: 2%;
+    margin-left: -19%;
+
+}
+.image-container img 
+{
+    object-fit: cover;
+/*    width: 204vh;
+*/    height: 700px;
+}
+
+.container 
+{
+    position: relative;
+}
+
+.image-container.active 
+{
+        display: block;
+}
+.booking-form 
+{
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    width:400px;
+    height:350px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 2px;
+    color:white;
+    border-left:6px solid red;
+}
+
+.booking-form label 
+{
+        font-weight: bold;
+}
+
+.logo
+{
+    padding-top:5px;
+    margin-left:15%;
+}
+.image-partition 
+{
+    height: 400px;
+}
+
+.image-partition img 
+{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+ }
+#topheading
+{
+    margin-left:5%;
+}
+#bookingbtn
+{
+    margin-top:10px;
+    margin-left:35%;
+    border-radius:20px;
+    
+}
+#mynav 
+{
+    margin-right:50px;
+    margin-top:10px;
+}
+#mynav li
+{
+    padding:22px;
+}
+
+#mynav li.nav-item:hover a.nav-link 
+{
+        color: red !important; 
+}
+/*.blog-bgimg 
+{
+    margin-left: -19%;
+    height:50px;
+}*/
+
+
+
+
+
+

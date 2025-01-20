@@ -1,0 +1,79 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/css/AboutStyle.css")">
+</head>
+
+<body>
+    <!--ABOUT HEADING-->
+   
+
+    <div class="team-grid" style="background-color:white">
+        <div class="container">
+            
+            <div class="intro" style="display: block; margin-top:110px;">
+                <h1 style="color:darkblue; margin-top:40px; text-align:center;">ABOUT US</h1>
+                <p style="color:darkblue;">KETO is a luxury hotel located in the heart of Lahore. 
+                    With exceptional hospitality and a commitment to providing a memorable experience, 
+                    our hotel is the perfect choice for both business and leisure travelers. 
+                    Our well-appointed rooms and suites offer a comfortable and stylish retreat,
+                    while our on-site restaurant serves delectable cuisine from around the world. 
+                    Relax and rejuvenate at our spa and fitness center, or take a dip in our inviting swimming pool. 
+                    At KETO, we strive to exceed your expectations and create a truly unforgettable stay.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-color:black">
+                        <div class="cover">
+                            <h3 class="name">Ben Johnson</h3>
+                            <p class="title">Musician</p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-color:black">
+                        <div class="cover">
+                            <h3 class="name">Emily Clark</h3>
+                            <p class="title">Artist </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-color:black">
+                        <div class="cover">
+                            <h3 class="name">Carl Kent</h3>
+                            <p class="title">Stylist </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 item">
+                    <div class="box" style="background-color:black">
+                        <div class="cover">
+                            <h3 class="name">Felicia Adams</h3>
+                            <p class="title">Model </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+﻿
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hotel_Booking_System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/gallery.css">
+    <link rel="stylesheet" href="~/css/AboutStyle.css" />
+
+
+</head>
+<body>
+        <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+        <div class="logo">
+          <a href="#"><img src="~/images/logo.png" alt="#" id="logo"/></a>
+
+        </div>
+         <ul class="navbar-nav ml-auto" id="mynav">
+                <li class="nav-item active">
+                <a class="nav-link text-dark font-weight-bold" href="@Url.Action("Index", "Home")">HOME</a>
+                </li>
+                 <li class="nav-item">
+                <a class="nav-link text-black font-weight-bold" href="@Url.Action("About", "Hotel")">ABOUT</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-black font-weight-bold" href="@Url.Action("gallery", "Hotel")">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black font-weight-bold" href="@Url.Action("Booking", "Hotel")">BOOKING</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-black font-weight-bold" href="@Url.Action("login", "Hotel")">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black font-weight-bold" href="@Url.Action("signup", "Hotel")">SIGNUP</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link text-black font-weight-bold" href="@Url.Action("logout", "Hotel")">LOGOUT</a>
+                </li> 
+            </ul>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--FOOTER-->
+   <div class="container-fluid myfooter">
+        <div class="row">
+            <div class="col-md-4 sub-menu1"  style="margin-left:5%;">
+                <h4 class="footer-heading">Contact Us</h4>
+                <p class="footer-text"><i class="fas fa-map-marker-alt footer-icon"></i> 123 Main Street, City, State, ZIP Code</p>
+                <p class="footer-text"><i class="fas fa-phone footer-icon"></i> +1 234 567 89</p>
+                <p class="footer-text"><i class="fas fa-envelope footer-icon"></i> info@example.com</p>
+            </div>
+            <div class="col-md-4 sub-menu2" >
+                <h4 class="footer-heading">Menu</h4>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 sub-menu3" style="margin-left:-5%;">
+                <h4 class="footer-heading">Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email"><br />
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+  </div>
+  <br />
+   <div class="row">
+            <div class="col-md-12 text-center">
+                <div>&copy; 2019 All Rights Reserved</div>
+                <div>Distributed by ThemeWagon</div>
+            </div>
+   </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
